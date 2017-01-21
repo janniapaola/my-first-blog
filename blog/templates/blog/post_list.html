@@ -4,5 +4,19 @@
 <h1>Hello World</h1>
 <p><h2>This is Jannia Fajer's Blog!</h2></p></head>
 <body><p>It works!</p></body>
+      <div>
+        <h1><a href="">Django Girls Blog</a></h1>
+      </div>
+      {% for post in posts %}
+        <div>
+           <p>published: {{post.published_date}}</p>
+           <h1><a href=""> {{post.published_date}}</a></h1>
+           <p> {{ post.text|linebreaksbr}}</p>
+        </div>
+        {% endfor %}
+        <div>
+     
+        </div>
+    </body>
 </html>
 
